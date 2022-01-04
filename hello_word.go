@@ -46,6 +46,9 @@ func main() {
 	}else {fmt.Println(i)}
 	}
 	*/
+
+	//switch
+	/*
 	for i:=1; i<=100; i++{
 	switch i {
 		case 0: fmt.Println("Zero")
@@ -57,4 +60,51 @@ func main() {
 		default: fmt.Println("Unknown Number")
 		}
 	}
+	*/
+	//среднее массива х
+	/*
+	x := [5]float64{ 98, 93, 77, 82, 83 }
+	var total float64 = 0
+for _, value := range x {
+    total += value
+}
+fmt.Println(total / float64(len(x)))
+*/
+
+//append
+/*
+slice1 := []int{1,2,3}
+slice2 := append(slice1, 4, 5)
+fmt.Println(slice1, slice2)
+*/
+
+//maps
+/*
+    elements := make(map[string]string)
+    elements["H"] = "Hydrogen"
+    elements["He"] = "Helium"
+    elements["Li"] = "Lithium"
+    elements["Be"] = "Beryllium"
+    elements["B"] = "Boron"
+    elements["C"] = "Carbon"
+    elements["N"] = "Nitrogen"
+    elements["O"] = "Oxygen"
+    elements["F"] = "Fluorine"
+    elements["Ne"] = "Neon"
+
+    fmt.Println(elements)
+	*/
+
+	//min x[]
+	x:=[]int {48,96,86,68,57,82,63,70,37,34,83,27,19,97,9,17,
+	}
+	min:=x[0] 
+		for y:=1;y<len(x); y++{
+		min1:=x[y]
+		if min1<min		{
+		min=min1
+		} else{}
+	}
+	fmt.Println(min)
+
 }
