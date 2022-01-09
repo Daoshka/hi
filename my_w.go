@@ -4,11 +4,15 @@ import "fmt"
 
 func main() {
 
-	var x int = 7
-	fmt.Println(even(x))
+	var k int = 7
+	fmt.Println(even(k))
 
 	fmt.Println(max_el(8, 5, 4, 3, 2, 9, 10, 2, 4, 0, 5, 10.5, 12, 16.5, 1, 2.2))
 
+	x := 1
+	y := 2
+	chang(&x, &y)
+	fmt.Println("x=", x, "y=", y)
 }
 
 func my_w() {
@@ -38,4 +42,9 @@ func max_el(arg ...float64) float64 {
 	}
 	return mx
 
+}
+func chang(x *int, y *int) {
+	p := *x
+	*x = *y
+	*y = p
 }
